@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
+    <link rel="stylesheet" href="style.css">
     <!--tailwind and daisy cnd-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,9 +34,11 @@
   </script>
 
 </head>
-<body>
-    <header>
-        <div class="flex  items-center  justify-between bg-[#f9f7f3]">
+<body  class=" bg-white">
+    
+       <header>
+         <!--navbar-->
+         <div class="flex  items-center  justify-between bg-[#f9f7f3]">
             
             <div class="">
             
@@ -56,8 +59,41 @@
                     
                   </div>
              </div>
-    </header>
-    <main>ki</main>
+                     <!--navbar-->
+                    
+    </div>
+    <!--donation and history-->
+    <div class="m-10 flex justify-center gap-6 text-2xl text-black">
+        <button class="btn bg-color-primary  text-black hover:bg-color-primary">Donation</button>
+        <button class="btn bg-color-primary  text-black hover:bg-color-primary">History</button>
+     </div>
+     <!--donation and history-->
+       </header>
+    <main>
+        <div class="hero bg-base-200 min-h-screen bg-white w-full">
+            <div class="hero-content flex-col lg:flex-row">
+              <img
+                src="assets/noakhali.png"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <div class="stat flex">
+                  <p class="stat-img"><img src="assets/coin.png" alt=""></p>
+                  <p class="stat-value">0BDT</p>
+                </div>
+                <h1 class="text-5xl font-bold">Donate for Flood at Noakhali,Bangladesh</h1>
+                <p class="py-6">
+                  The recent floods in Noakhali have caused significant damage to homes infratructure.Your donation will help provide essential supplies and to those different by this disaster.Every contribution,big or small,makes difference.Please join us in supporting the relief effort and making a positive impact on the lives of those in need.
+                </p>
+                <div><input
+                  type="text"
+                  placeholder="Type here"
+                  class="input input-bordered input-success w-full max-w-xs" />.
+                </div>
+               <div class="w-full"><button class="btn btn-primary">Donate Now</button></div>
+              
+            </div>
+          </div>
+    </main>
 </body>
 <script src="./JS/index.js"></script>
 </html>

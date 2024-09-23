@@ -63,7 +63,7 @@ document.getElementById('btn-feni-add-money').addEventListener('click',function(
       `;
       
       document.getElementById('history-container').appendChild(historyInfo);
-  
+
 }
 else{
         alert('Wrong amount.Please give right amount');
@@ -104,4 +104,21 @@ else{
     
 })
 
+//**Toggle Active Status**
 
+const donationTab = document.getElementById('show-add-donation-form');
+const historyTab = document.getElementById('show-history-form');
+
+donationTab.addEventListener('click',function(){
+   donationTab.classList.add(
+      'bg-lime-400 ',
+      'text-black'
+   );
+   donationTab.classList.remove('text-gray-600');
+   historyTab.classList.remove('text-black','bg-lime-400');
+   historyTab.classList.add('text-gray-600');
+
+
+   document.getElementById('donation-form').classList.add('hidden');
+   document.getElementById('history-form').classList.remove('hidden');
+})

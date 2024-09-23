@@ -13,7 +13,17 @@ document.getElementById('btn-noakhali-add-money').addEventListener('click',funct
        const mainAccountBalance = getInputFieldTextById('main-account-balance');
        const newMainAccount = mainAccountBalance - newBalance;
        document.getElementById('main-account-balance').innerText = newMainAccount;
-  
+         if(newMainAccount<0){
+         
+           alert('error')
+         }
+       //history
+       const historyInfo = document.createElement('historyInfo');
+      historyInfo.innerText = `
+      ${addMoney}Taka is Donated for Flood-2024 at Noakhali,Bangladesh and new Balance:${newBalance}
+      `;
+      console.log(historyInfo);
+      document.getElementById('history-container').appendChild(historyInfo);
 }
 else{
         alert('Wrong amount.Please give right amount');
@@ -33,6 +43,13 @@ document.getElementById('btn-feni-add-money').addEventListener('click',function(
        const mainAccountBalance = getInputFieldTextById('main-account-balance');
        const newMainAccount = mainAccountBalance - newBalance;
        document.getElementById('main-account-balance').innerText = newMainAccount;
+       //history
+       const historyInfo = document.createElement('historyInfo');
+      historyInfo.innerText = `
+      ${addMoney}Taka is Donated for Flood Relief at Feni,Bangladesh and new Balance: ${newBalance}
+      `;
+      console.log(historyInfo);
+      document.getElementById('history-container').appendChild(historyInfo);
   
 }
 else{
@@ -52,6 +69,13 @@ document.getElementById('btn-quata-add-money').addEventListener('click',function
        const mainAccountBalance = getInputFieldTextById('main-account-balance');
        const newMainAccount = mainAccountBalance - newBalance;
        document.getElementById('main-account-balance').innerText = newMainAccount;
+       //history
+       const historyInfo = document.createElement('historyInfo');
+      historyInfo.innerHTML = `
+      <p class="text-2xl">${addMoney}Taka is Donated for Aid for Injured in the Quota Movement,Bangladesh and new Balance:${newBalance}</p>
+      `;
+      console.log(historyInfo);
+      document.getElementById('history-container').appendChild(historyInfo);
   
 }
 else{

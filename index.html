@@ -62,97 +62,119 @@
                      <!--navbar-->
                     
     </div>
+    
     <!--donation and history-->
     <div class="m-10 flex justify-center gap-6 text-2xl text-black">
-        <button class="btn bg-color-primary  text-black hover:bg-color-primary">Donation</button>
-        <button class="btn bg-color-primary  text-black hover:bg-color-primary">History</button>
+        <button id="show-add-donation-form" class="btn bg-color-primary  text-black hover:bg-color-primary">Donation</button>
+        <button id="show-history-form" class="btn bg-color-primary  text-black hover:bg-color-primary">History</button>
      </div>
      <!--donation and history-->
        </header>
-    <main class=" mt-auto  justify-center">
-      <!--Noakhali start-->
-        <div class="hero bg-base-200  bg-white w-full shadow-2xl border rounded-2xl">
-            <div class="hero-content flex-col lg:flex-row">
-              <img
-                src="assets/noakhali.png"
-                class="w-full rounded-lg shadow-2xl" />
-              <div>
-                <div class="stat flex border rounded-md bg-stone-300  w-fit ">
-                  <div class="stat-img"><img src="assets/coin.png" alt=""></div>
-                  <div id="account-balance" class="stat-value text-xl">0BDT</div>
+    
+       <main>
+       
+        <!------------------------------------------------------------------------------>
+         <!--Donation section start-->
+       <div id="donation-form" class=" mt-auto  justify-center">
+       
+          <!--Noakhali start-->
+            <div class="hero bg-base-200  bg-white w-full shadow-2xl border rounded-2xl">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="assets/noakhali.png"
+                    class="w-full rounded-lg shadow-2xl" />
+                  <div>
+                    <div class="stat flex border rounded-md bg-stone-300  w-fit ">
+                      <div class="stat-img"><img src="assets/coin.png" alt=""></div>
+                      <div id="noakhali-account-balance" class="stat-value text-xl">0BDT</div>
+                    </div>
+                    
+                      <h1 class="text-xl font-bold text-black">Donate for Flood at Noakhali,Bangladesh</h1>
+                  <p class="py-6 text-[#111111] opacity-70">
+                      The recent floods in Noakhali have caused significant damage to homes infratructure.Your donation will help provide essential supplies and to those different by this disaster.Every contribution,big or small,makes difference.Please join us in supporting the relief effort and making a positive impact on the lives of those in need.
+                    </p>
+                    <p><input id="input-noakhali-add-money"
+                      type="text"
+                      placeholder="Type Donate Amount"
+                      class="input w-full bg-white" />.</p>
+                    
+                   <button id="btn-noakhali-add-money" class="btn  w-full bg-color-primary  text-black hover:bg-color-primary">Donate Now</button>
+                    
+                  </div>
+              </div>
+            </div>
+            <!--Noakhali end-->
+    
+            <!--Feni start-->
+            <div class="hero bg-base-200 bg-white w-full shadow-2xl">
+              <div class="hero-content flex-col lg:flex-row">
+                <img
+                  src="assets/feni.png"
+                  class="w-full rounded-lg shadow-2xl" />
+                <div>
+                  <div class="stat flex border rounded-md bg-stone-300  w-fit ">
+                    <p class="stat-img"><img src="assets/coin.png" alt=""></p>
+                    <div id="feni-account-balance" class="stat-value text-xl">0BDT</div>
+                  </div>
+                  
+                    <h1 class="text-xl font-bold text-black">Donate for Flood at Feni,Bangladesh</h1>
+                <p class="py-6 text-[#111111] opacity-70">
+                    The recent floods in Fani have devastated local communities,leading to severe disruption and loss.Your generous donation will help provide immediate aid,including food,clean water, and medical supplies, to those affected by this calamity.Together,we can offer crucial support and help rebuild lives in the aftermath of this disaster.Every contribution counts towards makeing a real difference.Please consider donating today to assist those in urgent need. 
+                  </p>
+                  <p><input id="input-feni-add-money"
+                    type="text"
+                    placeholder="Type Donate Amount"
+                    class="input w-full bg-white" />.</p>
+                  
+                 <button id="btn-feni-add-money" class="btn  w-full bg-color-primary  text-black hover:bg-color-primary">Donate Now</button>
+                  
                 </div>
-                
-                  <h1 class="text-xl font-bold text-black">Donate for Flood at Noakhali,Bangladesh</h1>
-              <p class="py-6 text-[#111111] opacity-70">
-                  The recent floods in Noakhali have caused significant damage to homes infratructure.Your donation will help provide essential supplies and to those different by this disaster.Every contribution,big or small,makes difference.Please join us in supporting the relief effort and making a positive impact on the lives of those in need.
-                </p>
-                <p><input id="input-noakhali-add-money"
-                  type="text"
-                  placeholder="Type Donate Amount"
-                  class="input w-full bg-white" />.</p>
-                
-               <button id="btn-noakhali-add-money" class="btn  w-full bg-color-primary  text-black hover:bg-color-primary">Donate Now</button>
-                
-              </div>
+            </div>
           </div>
-        </div>
-        <!--Noakhali end-->
+            <!--Feni end-->
+            <!--Quater start-->
+            <div class="hero bg-base-200 bg-white w-full shadow-2xl">
+              <div class="hero-content flex-col lg:flex-row">
+                <img
+                  src="assets/quota-protest.png"
+                  class="w-full rounded-lg shadow-2xl" />
+                <div>
+                  <div class="stat flex border rounded-md bg-stone-300  w-fit ">
+                    <p class="stat-img"><img src="assets/coin.png" alt=""></p>
+                    <div id="quata-account-balance" class="stat-value text-xl">0BDT</div>
+                  </div>
+                  
+                    <h1 class="text-xl font-bold text-black">Aid for Injured in the Quota Movement</h1>
+                <p class="py-6 text-[#111111] opacity-70">
+                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals.Your support is crucial in providing medical assistance,rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individual receive the care and support they need during this challenging time.Every donation plays a vital role in alleviating their suffering and aiding in their recovery.Please consider making a donation to support these brave individuals in their time of need.
+                  </p>
+                  <p><input id="input-quata-add-money"
+                    type="text"
+                    placeholder="Type Donate Amount"
+                    class="input w-full bg-white" />.</p>
+                  
+                 <button id="btn-quata-add-money" class="btn  w-full bg-color-primary  text-black hover:bg-color-primary">Donate Now</button>
+                  
+                </div>
+            </div>
+          </div>
+            <!--Quota end-->
+            
+       </div>
+       <!--Donation section End-->
+       <!------------------------------------------------------------------------------------------>
+      <!--History section start-->
+      <div id="history-form" class="bg-white text-black shadow-2xl border rounded-2xl">
+        <h4 class="text-center text-5xl">History</h4>
+        <div></div>
+      </div>
+       <!--History section End-->
+      </main>
 
-        <!--Feni start-->
-        <div class="hero bg-base-200 bg-white w-full shadow-2xl">
-          <div class="hero-content flex-col lg:flex-row">
-            <img
-              src="assets/feni.png"
-              class="w-full rounded-lg shadow-2xl" />
-            <div>
-              <div class="stat flex border rounded-md bg-stone-300  w-fit ">
-                <p class="stat-img"><img src="assets/coin.png" alt=""></p>
-                <p class="stat-value text-xl">0BDT</p>
-              </div>
-              
-                <h1 class="text-xl font-bold text-black">Donate for Flood at Feni,Bangladesh</h1>
-            <p class="py-6 text-[#111111] opacity-70">
-                The recent floods in Fani have devastated local communities,leading to severe disruption and loss.Your generous donation will help provide immediate aid,including food,clean water, and medical supplies, to those affected by this calamity.Together,we can offer crucial support and help rebuild lives in the aftermath of this disaster.Every contribution counts towards makeing a real difference.Please consider donating today to assist those in urgent need. 
-              </p>
-              <p><input id="input-feni-add-money"
-                type="text"
-                placeholder="Type Donate Amount"
-                class="input w-full bg-white" />.</p>
-              
-             <button id="btn-feni-add-money" class="btn  w-full bg-color-primary  text-black hover:bg-color-primary">Donate Now</button>
-              
-            </div>
-        </div>
-      </div>
-        <!--Feni end-->
-        <!--Quater start-->
-        <div class="hero bg-base-200 bg-white w-full shadow-2xl">
-          <div class="hero-content flex-col lg:flex-row">
-            <img
-              src="assets/quota-protest.png"
-              class="w-full rounded-lg shadow-2xl" />
-            <div>
-              <div class="stat flex border rounded-md bg-stone-300  w-fit ">
-                <p class="stat-img"><img src="assets/coin.png" alt=""></p>
-                <p class="stat-value text-xl">0BDT</p>
-              </div>
-              
-                <h1 class="text-xl font-bold text-black">Aid for Injured in the Quota Movement</h1>
-            <p class="py-6 text-[#111111] opacity-70">
-            The recent Quata movement has resulted in numerous injuries and significant hardship for many individuals.Your support is crucial in providing medical assistance,rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individual receive the care and support they need during this challenging time.Every donation plays a vital role in alleviating their suffering and aiding in their recovery.Please consider making a donation to support these brave individuals in their time of need.
-              </p>
-              <p><input id="input-quata-add-money"
-                type="text"
-                placeholder="Type Donate Amount"
-                class="input w-full bg-white" />.</p>
-              
-             <button id="btn-quata-add-money" class="btn  w-full bg-color-primary  text-black hover:bg-color-primary">Donate Now</button>
-              
-            </div>
-        </div>
-      </div>
-        <!--Quater end-->
-        </main>
-</body>
-<script src="./JS/index.js"></script>
+
+      <script src="./JS/utilities.js"></script>
+      <script src="./JS/index.js"></script>
+      <script src="./JS/feature.js"></script>
+
+    </body>
 </html>

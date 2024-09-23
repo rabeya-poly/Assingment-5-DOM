@@ -16,3 +16,9 @@ function showSectionById(id){
     document.getElementById('history-form').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden');
 }
+
+//
+const donationTab = document.getElementById('show-add-donation-form');
+const historyTab = document.getElementById('show-history-form');
+
+

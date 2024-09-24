@@ -118,14 +118,20 @@ else{
 //**Toggle Active Status**//
 
 
-donationTab.addEventListener('click',function(){
-   donationTab.classList.add(
+historyTab.addEventListener('click',function(){
+   historyTab.classList.add(
       'bg-lime-400',
       'text-black'
    );
-   donationTab.classList.remove('text-gray-600');
-   historyTab.classList.remove('text-black','bg-lime-400');
-   historyTab.classList.add('text-gray-600');
-   document.getElementById('donation-form').classList.add('hidden');
+   historyTab.classList.remove('text-gray-600','bg-white');
+   donationTab.classList.remove('text-black','bg-lime-400');
+   donationTab.classList.add('text-gray-600','bg-white');
+
+   document.getElementById('donatio-form').classList.add('hidden');
    document.getElementById('history-form').classList.remove('hidden');
+
 })
+
+
+
+
